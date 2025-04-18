@@ -1,0 +1,94 @@
+data_I
+_chemical_name_common  '/data/user2/wty/HOF/MOFDiff/mofdiff/data/test/108_1950449_zrt-1-'
+_cell_length_a 36.91140
+_cell_length_b 36.91140
+_cell_length_c 36.91140
+_cell_angle_alpha 90.00000
+_cell_angle_beta  90.00000
+_cell_angle_gamma 90.00000
+_space_group_name_H-M_alt      'P 1'
+
+
+loop_
+_space_group_symop_operation_xyz
+  'x, y, z' 
+
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_type_symbol
+Zr0    0.61147  0.67553  0.38853    Zr
+O1      0.5775   0.6371   0.3629     O
+H2     0.55314  0.63251  0.36749     H
+O3     0.64412  0.64412  0.35588     O
+O4     0.66262  0.70537   0.3938     O
+C5      0.6949   0.6949   0.3933     C
+C6       0.724    0.724   0.3924     C
+C7      0.7134   0.7599   0.3925     C
+H8     0.68898  0.76611  0.39258     H
+C9       0.579   0.6872   0.4477     C
+H10    0.58158  0.67001  0.46593     H
+C11     0.6006   0.7166   0.4425     C
+H12    0.62049  0.72331  0.45649     H
+C13     0.5873   0.7343   0.4127     C
+H14    0.59718  0.75533  0.40282     H
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_ccdc_geom_bond_type
+Zr0   O1     2.11645       .     S
+O1    Zr0    2.11645       .     S
+Zr0   O3     2.06131       .     S
+O3    Zr0    2.06131       .     S
+Zr0   O4     2.19445       .     S
+O4    Zr0    2.19445       .     S
+O1    H2     0.93054       .     S
+H2    O1     0.93054       .     S
+O4    C5     1.25274       .     S
+C5    O4     1.25274       .     S
+C5    C6     1.51940       .     S
+C6    C5     1.51940       .     S
+C6    C7     1.38168       .     S
+C7    C6     1.38168       .     S
+C7    H8     0.93007       .     S
+H8    C7     0.93007       .     S
+C9    H10    0.92976       .     S
+H10   C9     0.92976       .     S
+C9    C11    1.36020       .     S
+C11   C9     1.36020       .     S
+C11   H12    0.93113       .     S
+H12   C11    0.93113       .     S
+C11   C13    1.37031       .     S
+C13   C11    1.37031       .     S
+C13   H14    0.93196       .     S
+H14   C13    0.93196       .     S
+O1    Zr0    2.11645       .     S
+Zr0   O1     2.11645       .     S
+O3    Zr0    2.06131       .     S
+Zr0   O3     2.06131       .     S
+O4    Zr0    2.19445       .     S
+Zr0   O4     2.19445       .     S
+H2    O1     0.93054       .     S
+O1    H2     0.93054       .     S
+C5    O4     1.25274       .     S
+O4    C5     1.25274       .     S
+C6    C5     1.51940       .     S
+C5    C6     1.51940       .     S
+C7    C6     1.38168       .     S
+C6    C7     1.38168       .     S
+H8    C7     0.93007       .     S
+C7    H8     0.93007       .     S
+H10   C9     0.92976       .     S
+C9    H10    0.92976       .     S
+C11   C9     1.36020       .     S
+C9    C11    1.36020       .     S
+H12   C11    0.93113       .     S
+C11   H12    0.93113       .     S
+C13   C11    1.37031       .     S
+C11   C13    1.37031       .     S
+H14   C13    0.93196       .     S
+C13   H14    0.93196       .     S

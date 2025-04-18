@@ -1,0 +1,73 @@
+data_I
+_chemical_name_common  '/data/user2/wty/HOF/MOFDiff/mofdiff/data/test/28_1478358_t2-_240k'
+_cell_length_a 23.22090
+_cell_length_b 23.22090
+_cell_length_c  7.28640
+_cell_angle_alpha 90.00000
+_cell_angle_beta  90.00000
+_cell_angle_gamma 120.00000
+_space_group_name_H-M_alt      'P 1'
+
+
+loop_
+_space_group_symop_operation_xyz
+  'x, y, z' 
+
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_type_symbol
+O0     0.51096  0.48904     0.75     O
+N1     0.45989  0.54011   0.5998     N
+C2      0.3333   0.6667   0.5736     C
+C3     0.36832  0.63168  0.65311     C
+C4     0.39756  0.60244  0.55466     C
+C5     0.42682  0.57318  0.65379     C
+C6     0.48002  0.51998     0.75     C
+H7      0.3977   0.6023    0.416     H
+H8      0.3333   0.6667    0.432     H
+H9      0.4686   0.5314    0.482     H
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_ccdc_geom_bond_type
+O0    C6     1.24440       .     S
+C6    O0     1.24440       .     S
+N1    C5     1.38703       .     S
+C5    N1     1.38703       .     S
+N1    C6     1.36134       .     S
+C6    N1     1.36134       .     S
+N1    H9     0.92707       .     S
+H9    N1     0.92707       .     S
+C2    C3     1.52299       .     S
+C3    C2     1.52299       .     S
+C2    H8     1.03175       .     S
+H8    C2     1.03175       .     S
+C3    C4     1.37754       .     S
+C4    C3     1.37754       .     S
+C4    C5     1.38081       .     S
+C5    C4     1.38081       .     S
+C4    H7     1.01035       .     S
+H7    C4     1.01035       .     S
+C6    O0     1.24440       .     S
+O0    C6     1.24440       .     S
+C5    N1     1.38703       .     S
+N1    C5     1.38703       .     S
+C6    N1     1.36134       .     S
+N1    C6     1.36134       .     S
+H9    N1     0.92707       .     S
+N1    H9     0.92707       .     S
+C3    C2     1.52299       .     S
+C2    C3     1.52299       .     S
+H8    C2     1.03175       .     S
+C2    H8     1.03175       .     S
+C4    C3     1.37754       .     S
+C3    C4     1.37754       .     S
+C5    C4     1.38081       .     S
+C4    C5     1.38081       .     S
+H7    C4     1.01035       .     S
+C4    H7     1.01035       .     S

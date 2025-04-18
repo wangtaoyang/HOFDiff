@@ -1,0 +1,5 @@
+2024-12-19 15:45:11,087 - prepare_energy_grid.log - INFO - sample_0_20 energy grid success
+2024-12-19 15:45:11,089 - prepare_energy_grid.log - INFO - sample_0_20 energy grid changed to np16
+2024-12-19 15:46:14,717 - prepare_energy_grid.log - INFO - sample_0_20 energy grid already exists
+2024-12-19 15:46:19,223 - prepare_energy_grid.log - INFO - 1_1 energy grid success
+2024-12-19 15:46:19,224 - prepare_energy_grid.log - INFO - 1_1 energy grid changed to np16

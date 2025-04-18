@@ -1,0 +1,83 @@
+data_I
+_chemical_name_common  '/data/user2/wty/HOF/MOFDiff/mofdiff/data/test/184_cfa-20-cl'
+_cell_length_a 22.12600
+_cell_length_b 22.12600
+_cell_length_c 22.12600
+_cell_angle_alpha 90.00000
+_cell_angle_beta  90.00000
+_cell_angle_gamma 90.00000
+_space_group_name_H-M_alt      'P 1'
+
+
+loop_
+_space_group_symop_operation_xyz
+  'x, y, z' 
+
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_type_symbol
+Zn0        0.5      0.5      0.5    Zn
+Zn1    0.59223  0.59223  0.59223    Zn
+Cl2    0.64924  0.64924  0.64924    Cl
+N3         0.5      0.5  0.59823     N
+N4      0.5352   0.5352   0.6335     N
+N5      0.5443   0.5443  0.85487     N
+H6     0.55597  0.58661  0.85066     H
+H7     0.50973   0.5411  0.88587     H
+C8     0.52255  0.52255  0.69132     C
+C9     0.54622  0.54622  0.74573     C
+H10    0.57658  0.57658  0.74619     H
+C11      0.522    0.522  0.79883     C
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_ccdc_geom_bond_type
+Zn0   N3     2.17344       .     S
+N3    Zn0    2.17344       .     S
+Zn1   Cl2    2.18481       .     S
+Cl2   Zn1    2.18481       .     S
+Zn1   N4     2.00458       .     S
+N4    Zn1    2.00458       .     S
+N3    N4     1.34988       .     S
+N4    N3     1.34988       .     S
+N4    C8     1.33916       .     S
+C8    N4     1.33916       .     S
+N5    H6     0.97557       .     S
+H6    N5     0.97557       .     S
+N5    H7     1.02983       .     S
+H7    N5     1.02983       .     S
+N5    C11    1.42280       .     S
+C11   N5     1.42280       .     S
+C8    C9     1.41347       .     S
+C9    C8     1.41347       .     S
+C9    H10    0.95004       .     S
+H10   C9     0.95004       .     S
+C9    C11    1.39811       .     S
+C11   C9     1.39811       .     S
+N3    Zn0    2.17344       .     S
+Zn0   N3     2.17344       .     S
+Cl2   Zn1    2.18481       .     S
+Zn1   Cl2    2.18481       .     S
+N4    Zn1    2.00458       .     S
+Zn1   N4     2.00458       .     S
+N4    N3     1.34988       .     S
+N3    N4     1.34988       .     S
+C8    N4     1.33916       .     S
+N4    C8     1.33916       .     S
+H6    N5     0.97557       .     S
+N5    H6     0.97557       .     S
+H7    N5     1.02983       .     S
+N5    H7     1.02983       .     S
+C11   N5     1.42280       .     S
+N5    C11    1.42280       .     S
+C9    C8     1.41347       .     S
+C8    C9     1.41347       .     S
+H10   C9     0.95004       .     S
+C9    H10    0.95004       .     S
+C11   C9     1.39811       .     S
+C9    C11    1.39811       .     S

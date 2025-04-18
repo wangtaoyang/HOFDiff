@@ -1,0 +1,73 @@
+data_I
+_chemical_name_common  '/data/user2/wty/HOF/MOFDiff/mofdiff/data/test/2_g3cbs'
+_cell_length_a  7.31580
+_cell_length_b  7.32420
+_cell_length_c 12.27200
+_cell_angle_alpha 73.74900
+_cell_angle_beta  72.97900
+_cell_angle_gamma 62.07600
+_space_group_name_H-M_alt      'P 1'
+
+
+loop_
+_space_group_symop_operation_xyz
+  'x, y, z' 
+
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_type_symbol
+C0      0.6925   0.5005   0.1143     C
+N1      0.7933   0.2965   0.1102     N
+H2      0.7237   0.2273   0.1081     H
+H3      0.9296   0.2308   0.1095     H
+N4      0.4867   0.6003   0.1153     N
+H5      0.4168   0.5313   0.1133     H
+H6      0.4203   0.7353    0.118     H
+N7       0.799   0.6053  0.11719     N
+H8      0.7327   0.7404   0.1198     H
+H9      0.9353   0.5392   0.1165     H
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_ccdc_geom_bond_type
+C0    N1     1.32935       .     S
+N1    C0     1.32935       .     S
+C0    N4     1.32842       .     S
+N4    C0     1.32842       .     S
+C0    N7     1.33754       .     S
+N7    C0     1.33754       .     S
+N1    H2     0.87949       .     S
+H2    N1     0.87949       .     S
+N1    H3     0.87967       .     S
+H3    N1     0.87967       .     S
+N4    H5     0.87968       .     S
+H5    N4     0.87968       .     S
+N4    H6     0.87965       .     S
+H6    N4     0.87965       .     S
+N7    H8     0.88007       .     S
+H8    N7     0.88007       .     S
+N7    H9     0.87975       .     S
+H9    N7     0.87975       .     S
+N1    C0     1.32935       .     S
+C0    N1     1.32935       .     S
+N4    C0     1.32842       .     S
+C0    N4     1.32842       .     S
+N7    C0     1.33754       .     S
+C0    N7     1.33754       .     S
+H2    N1     0.87949       .     S
+N1    H2     0.87949       .     S
+H3    N1     0.87967       .     S
+N1    H3     0.87967       .     S
+H5    N4     0.87968       .     S
+N4    H5     0.87968       .     S
+H6    N4     0.87965       .     S
+N4    H6     0.87965       .     S
+H8    N7     0.88007       .     S
+N7    H8     0.88007       .     S
+H9    N7     0.87975       .     S
+N7    H9     0.87975       .     S

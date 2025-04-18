@@ -1,0 +1,842 @@
+[2024-08-01 01:43:23,275][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-08-01 01:43:28,482][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-08-01 01:43:28,533][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmptoeqayb7
+[2024-08-01 01:43:28,534][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmptoeqayb7/_remote_module_non_scriptable.py
+[2024-08-01 01:43:30,421][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-08-01 01:43:30,422][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-08-01 01:43:30,422][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-08-01 01:43:30,423][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-08-01 01:43:30,427][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-08-01 01:43:30,440][hydra.utils][INFO] - Instantiating the Trainer
+[2024-08-01 01:43:30,806][hydra.utils][INFO] - Starting training!
+[2024-09-05 17:10:36,077][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-05 17:37:00,588][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-05 17:38:03,783][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-05 17:39:01,898][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-05 17:40:16,168][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-05 17:41:22,649][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-05 17:41:29,697][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-05 17:41:29,977][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpuujk81p9
+[2024-09-05 17:41:29,978][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpuujk81p9/_remote_module_non_scriptable.py
+[2024-09-05 17:41:32,294][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-05 17:41:32,296][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-05 17:41:32,296][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-05 17:41:32,298][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-05 17:41:32,302][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-05 17:41:32,318][hydra.utils][INFO] - found checkpoint: /opt/wty/hof_synthesis/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-09-05 17:41:32,318][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-05 17:41:32,631][hydra.utils][INFO] - Starting training!
+[2024-09-05 17:53:28,544][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-05 17:53:29,470][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-05 17:53:29,507][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpro7swn4_
+[2024-09-05 17:53:29,507][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpro7swn4_/_remote_module_non_scriptable.py
+[2024-09-05 17:53:31,220][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-05 17:53:31,221][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-05 17:53:31,221][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-05 17:53:31,223][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-05 17:53:31,226][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-05 17:53:31,240][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-05 17:53:31,489][hydra.utils][INFO] - Starting training!
+[2024-09-06 17:25:40,967][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-06 17:25:41,939][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-06 17:25:41,975][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp97exsn9h
+[2024-09-06 17:25:41,976][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp97exsn9h/_remote_module_non_scriptable.py
+[2024-09-06 17:25:43,787][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-06 17:25:43,788][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-06 17:25:43,788][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-06 17:25:43,789][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-06 17:25:43,792][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-06 17:25:43,801][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-06 17:25:44,060][hydra.utils][INFO] - Starting training!
+[2024-09-06 17:29:12,951][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-06 17:29:21,282][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-06 17:29:21,326][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpar0an6ak
+[2024-09-06 17:29:21,327][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpar0an6ak/_remote_module_non_scriptable.py
+[2024-09-06 17:29:23,536][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-06 17:29:23,557][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-06 17:29:23,557][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-06 17:29:23,559][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-06 17:29:23,564][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-06 17:29:23,576][hydra.utils][INFO] - found checkpoint: /opt/wty/hof_synthesis/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-09-06 17:29:23,576][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-06 17:29:23,867][hydra.utils][INFO] - Starting training!
+[2024-09-06 17:29:45,391][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-06 17:29:46,864][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-06 17:29:46,901][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpso6hp8ra
+[2024-09-06 17:29:46,901][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpso6hp8ra/_remote_module_non_scriptable.py
+[2024-09-06 17:29:48,715][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-06 17:29:48,716][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-06 17:29:48,716][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-06 17:29:48,718][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-06 17:29:48,721][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-06 17:29:48,730][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-06 17:29:49,036][hydra.utils][INFO] - Starting training!
+[2024-09-06 17:30:23,526][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-06 17:30:24,928][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-06 17:30:24,987][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpl_3r1pd2
+[2024-09-06 17:30:24,987][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpl_3r1pd2/_remote_module_non_scriptable.py
+[2024-09-06 17:30:26,969][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-06 17:30:26,982][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-06 17:30:26,983][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-06 17:30:26,984][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-06 17:30:26,989][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-06 17:30:27,003][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-06 17:30:27,274][hydra.utils][INFO] - Starting training!
+[2024-09-09 11:31:09,851][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-09 11:31:19,200][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-09 11:31:19,241][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmphzu3fm6g
+[2024-09-09 11:31:19,241][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmphzu3fm6g/_remote_module_non_scriptable.py
+[2024-09-09 11:31:21,012][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-09 11:31:21,014][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-09 11:31:21,015][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-09 11:31:21,016][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-09 11:31:21,027][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-09 11:31:21,045][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-09 11:31:21,263][hydra.utils][INFO] - Starting training!
+[2024-09-09 15:34:35,097][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-09 15:34:42,563][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-09 15:34:42,602][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpngf61_2y
+[2024-09-09 15:34:42,602][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpngf61_2y/_remote_module_non_scriptable.py
+[2024-09-09 15:34:44,136][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-09 15:34:44,137][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-09 15:34:44,138][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-09 15:34:44,139][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-09 15:34:44,143][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-09 15:34:44,156][hydra.utils][INFO] - found checkpoint: /opt/wty/hof_synthesis/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-09-09 15:34:44,156][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-09 15:34:44,392][hydra.utils][INFO] - Starting training!
+[2024-09-09 15:37:42,803][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-09 15:37:44,591][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-09 15:37:44,636][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpufmc8b7t
+[2024-09-09 15:37:44,636][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpufmc8b7t/_remote_module_non_scriptable.py
+[2024-09-09 15:37:46,626][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-09 15:37:46,627][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-09 15:37:46,627][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-09 15:37:46,629][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-09 15:37:46,633][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-09 15:37:46,647][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-09 15:37:46,861][hydra.utils][INFO] - Starting training!
+[2024-09-10 11:30:55,980][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-10 11:31:22,133][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-10 11:31:22,304][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpx82osi55
+[2024-09-10 11:31:22,304][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpx82osi55/_remote_module_non_scriptable.py
+[2024-09-10 11:33:29,101][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-10 11:33:31,482][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-10 11:33:31,556][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpew0tykzv
+[2024-09-10 11:33:31,557][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpew0tykzv/_remote_module_non_scriptable.py
+[2024-09-10 13:32:41,744][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-10 13:32:46,583][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-10 13:32:46,622][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp2ihy8fqs
+[2024-09-10 13:32:46,622][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp2ihy8fqs/_remote_module_non_scriptable.py
+[2024-09-10 13:33:10,511][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-10 13:33:11,420][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-10 13:33:11,462][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp1e5k2_n8
+[2024-09-10 13:33:11,462][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp1e5k2_n8/_remote_module_non_scriptable.py
+[2024-09-10 13:40:35,374][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-10 13:40:36,304][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-10 13:40:36,348][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp8cal8g45
+[2024-09-10 13:40:36,348][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp8cal8g45/_remote_module_non_scriptable.py
+[2024-09-10 13:40:59,341][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-10 13:43:03,082][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-10 13:43:11,426][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-10 13:43:11,495][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpvfftdeog
+[2024-09-10 13:43:11,496][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpvfftdeog/_remote_module_non_scriptable.py
+[2024-09-10 14:30:29,316][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-10 14:30:44,164][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-10 14:30:44,209][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp9_9aydcg
+[2024-09-10 14:30:44,209][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp9_9aydcg/_remote_module_non_scriptable.py
+[2024-09-10 14:31:08,629][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-10 14:31:09,871][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-10 14:31:09,933][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpu37h7weu
+[2024-09-10 14:31:09,933][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpu37h7weu/_remote_module_non_scriptable.py
+[2024-09-10 14:36:51,330][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-10 14:36:52,709][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-10 14:36:52,757][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpofpe58zc
+[2024-09-10 14:36:52,758][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpofpe58zc/_remote_module_non_scriptable.py
+[2024-09-10 14:36:56,700][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-10 14:36:56,703][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-10 14:36:56,704][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-10 14:36:56,707][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-10 14:36:56,715][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-10 14:36:56,735][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-10 14:36:57,288][hydra.utils][INFO] - Starting training!
+[2024-09-10 16:50:16,982][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-10 16:50:29,236][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-10 16:50:29,313][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmppsc4c5ra
+[2024-09-10 16:50:29,313][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmppsc4c5ra/_remote_module_non_scriptable.py
+[2024-09-10 16:50:34,872][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-10 16:50:34,996][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-10 16:50:34,997][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-10 16:50:35,000][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-10 16:50:35,005][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-10 16:50:35,136][hydra.utils][INFO] - found checkpoint: /opt/wty/hof_synthesis/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-09-10 16:50:35,136][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-10 16:50:37,239][hydra.utils][INFO] - Starting training!
+[2024-09-10 16:52:02,290][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-10 16:53:51,807][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-10 16:54:04,202][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-10 16:54:04,264][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmptyanud3z
+[2024-09-10 16:54:04,264][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmptyanud3z/_remote_module_non_scriptable.py
+[2024-09-10 16:54:09,217][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-10 16:54:09,220][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-10 16:54:09,221][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-10 16:54:09,223][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-10 16:54:09,229][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-10 16:54:09,246][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-10 16:54:09,488][hydra.utils][INFO] - Starting training!
+[2024-09-11 00:40:32,228][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-11 00:40:41,847][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-11 00:40:42,183][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpyb9p5ie2
+[2024-09-11 00:40:42,183][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpyb9p5ie2/_remote_module_non_scriptable.py
+[2024-09-11 00:40:51,079][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-11 00:40:51,081][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-11 00:40:51,082][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-11 00:40:51,084][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-11 00:40:51,089][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-11 00:40:51,105][hydra.utils][INFO] - found checkpoint: /opt/wty/hof_synthesis/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-09-11 00:40:51,105][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-11 00:40:51,837][hydra.utils][INFO] - Starting training!
+[2024-09-11 01:29:35,956][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-11 01:29:46,813][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-11 01:29:46,872][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpxe3udtea
+[2024-09-11 01:29:46,873][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpxe3udtea/_remote_module_non_scriptable.py
+[2024-09-11 01:29:52,885][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-11 01:29:52,888][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-11 01:29:52,888][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-11 01:29:52,890][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-11 01:29:52,896][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-11 01:29:52,914][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-11 01:29:53,441][hydra.utils][INFO] - Starting training!
+[2024-09-18 23:50:49,821][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-18 23:50:53,694][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-18 23:50:53,738][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp10tq3hpa
+[2024-09-18 23:50:53,738][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp10tq3hpa/_remote_module_non_scriptable.py
+[2024-09-18 23:50:55,022][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-18 23:50:55,023][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-18 23:50:55,023][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-18 23:50:55,024][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-18 23:50:55,027][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-18 23:50:55,035][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-09-18 23:50:55,035][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-18 23:50:55,220][hydra.utils][INFO] - Starting training!
+[2024-09-18 23:58:35,745][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-18 23:58:39,852][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-18 23:58:39,885][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpoma61gzf
+[2024-09-18 23:58:39,885][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpoma61gzf/_remote_module_non_scriptable.py
+[2024-09-18 23:58:41,188][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-18 23:58:41,189][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-18 23:58:41,189][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-18 23:58:41,190][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-18 23:58:41,192][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-18 23:58:41,201][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-18 23:58:41,420][hydra.utils][INFO] - Starting training!
+[2024-09-19 00:02:24,953][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-19 00:02:28,958][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-19 00:02:29,002][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpxhwo8ic8
+[2024-09-19 00:02:29,002][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpxhwo8ic8/_remote_module_non_scriptable.py
+[2024-09-19 00:02:30,375][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-19 00:02:30,376][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-19 00:02:30,376][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-19 00:02:30,377][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-19 00:02:30,379][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-19 00:02:30,387][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-09-19 00:02:30,387][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-19 00:02:30,594][hydra.utils][INFO] - Starting training!
+[2024-09-20 13:58:07,676][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-20 13:58:12,350][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-20 13:58:12,403][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmppgaj74_5
+[2024-09-20 13:58:12,403][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmppgaj74_5/_remote_module_non_scriptable.py
+[2024-09-20 13:58:14,156][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-20 13:58:14,157][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-20 13:58:14,157][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-20 13:58:14,159][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-20 13:58:14,163][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-20 13:58:14,175][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-09-20 13:58:14,175][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-20 13:58:14,385][hydra.utils][INFO] - Starting training!
+[2024-09-20 13:59:14,579][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-20 13:59:15,178][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-20 13:59:15,212][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpbro33q5c
+[2024-09-20 13:59:15,212][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpbro33q5c/_remote_module_non_scriptable.py
+[2024-09-20 13:59:16,443][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-20 13:59:16,444][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-20 13:59:16,444][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-20 13:59:16,445][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-20 13:59:16,448][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-20 13:59:16,460][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-20 13:59:16,663][hydra.utils][INFO] - Starting training!
+[2024-09-20 14:06:55,291][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-20 14:06:59,725][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-20 14:06:59,764][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpgmvszo1q
+[2024-09-20 14:06:59,764][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpgmvszo1q/_remote_module_non_scriptable.py
+[2024-09-20 14:07:01,148][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-20 14:07:01,149][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-20 14:07:01,149][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-20 14:07:01,150][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-20 14:07:01,153][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-20 14:07:01,165][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-09-20 14:07:01,165][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-20 14:07:58,491][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-20 14:07:59,054][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-20 14:07:59,088][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp21pzwp__
+[2024-09-20 14:07:59,088][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp21pzwp__/_remote_module_non_scriptable.py
+[2024-09-20 14:08:00,318][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-20 14:08:00,319][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-20 14:08:00,319][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-20 14:08:00,320][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-20 14:08:00,324][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-20 14:08:00,335][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-09-20 14:08:00,336][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-20 14:08:00,535][hydra.utils][INFO] - Starting training!
+[2024-09-20 14:08:28,219][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-20 14:08:31,994][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-20 14:08:32,029][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpy2tw8pdg
+[2024-09-20 14:08:32,029][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpy2tw8pdg/_remote_module_non_scriptable.py
+[2024-09-20 14:08:33,332][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-20 14:08:33,333][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-20 14:08:33,333][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-20 14:08:33,334][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-20 14:08:33,337][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-20 14:08:33,345][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-09-20 14:08:33,345][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-20 14:08:33,524][hydra.utils][INFO] - Starting training!
+[2024-09-20 14:10:07,018][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-20 14:10:13,455][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-20 14:10:13,499][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpk1ufga5c
+[2024-09-20 14:10:13,499][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpk1ufga5c/_remote_module_non_scriptable.py
+[2024-09-20 14:10:14,870][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-20 14:10:14,871][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-20 14:10:14,872][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-20 14:10:14,873][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-20 14:10:14,876][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-20 14:10:14,888][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-09-20 14:10:14,888][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-20 14:10:15,115][hydra.utils][INFO] - Starting training!
+[2024-09-20 14:12:40,579][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-20 14:12:44,694][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-20 14:12:44,729][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp2qgrnjw_
+[2024-09-20 14:12:44,729][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp2qgrnjw_/_remote_module_non_scriptable.py
+[2024-09-20 14:12:45,825][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-20 14:12:45,825][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-20 14:12:45,826][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-20 14:12:45,827][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-20 14:12:45,829][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-20 14:12:45,838][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-09-20 14:12:45,838][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-20 14:12:46,038][hydra.utils][INFO] - Starting training!
+[2024-09-20 14:13:19,807][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-20 14:13:20,515][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-20 14:13:20,561][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp72bx6y_j
+[2024-09-20 14:13:20,561][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp72bx6y_j/_remote_module_non_scriptable.py
+[2024-09-20 14:13:21,934][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-20 14:13:21,935][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-20 14:13:21,935][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-20 14:13:21,937][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-20 14:13:21,941][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-20 14:13:21,952][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-20 14:13:22,170][hydra.utils][INFO] - Starting training!
+[2024-09-20 14:14:21,847][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-20 14:14:26,005][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-20 14:14:26,044][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpg8vxwn0z
+[2024-09-20 14:14:26,044][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpg8vxwn0z/_remote_module_non_scriptable.py
+[2024-09-20 14:14:27,156][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-20 14:14:27,156][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-20 14:14:27,157][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-20 14:14:27,158][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-20 14:14:27,160][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-20 14:14:27,168][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-20 14:14:27,353][hydra.utils][INFO] - Starting training!
+[2024-09-20 14:16:37,299][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-20 14:16:41,978][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-20 14:16:42,011][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpz9z_w_bd
+[2024-09-20 14:16:42,011][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpz9z_w_bd/_remote_module_non_scriptable.py
+[2024-09-20 14:16:43,369][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-20 14:16:43,370][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-20 14:16:43,370][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-20 14:16:43,371][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-20 14:16:43,374][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-20 14:16:43,382][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-20 14:16:43,567][hydra.utils][INFO] - Starting training!
+[2024-09-20 18:38:56,892][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-20 18:38:57,455][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-20 18:38:57,492][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpe8xsv1x1
+[2024-09-20 18:38:57,493][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpe8xsv1x1/_remote_module_non_scriptable.py
+[2024-09-20 18:38:58,869][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-20 18:38:58,870][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-20 18:38:58,870][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-20 18:38:58,872][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-20 18:38:58,875][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-20 18:38:58,887][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-20 18:38:59,085][hydra.utils][INFO] - Starting training!
+[2024-09-23 17:11:58,010][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-23 17:12:20,125][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-23 17:12:23,962][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-23 17:12:23,996][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpp4g2wiwh
+[2024-09-23 17:12:23,996][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpp4g2wiwh/_remote_module_non_scriptable.py
+[2024-09-23 17:12:47,647][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-23 17:12:48,203][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-23 17:12:48,241][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp1dz6zcv0
+[2024-09-23 17:12:48,242][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp1dz6zcv0/_remote_module_non_scriptable.py
+[2024-09-23 17:12:49,314][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-23 17:12:49,315][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-23 17:12:49,315][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-23 17:12:49,316][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-23 17:12:49,319][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-23 17:12:49,327][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-23 17:12:49,616][hydra.utils][INFO] - Starting training!
+[2024-09-23 17:13:30,646][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-23 17:13:35,384][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-23 17:13:35,425][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpc773j20l
+[2024-09-23 17:13:35,426][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpc773j20l/_remote_module_non_scriptable.py
+[2024-09-23 17:13:36,768][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-23 17:13:36,769][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-23 17:13:36,769][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-23 17:13:36,770][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-23 17:13:36,773][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-23 17:13:36,781][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-23 17:13:37,087][hydra.utils][INFO] - Starting training!
+[2024-09-23 17:22:22,395][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-23 17:22:22,962][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-23 17:22:22,995][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpo8krq1qm
+[2024-09-23 17:22:22,995][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpo8krq1qm/_remote_module_non_scriptable.py
+[2024-09-23 17:22:24,094][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-23 17:22:24,095][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-23 17:22:24,095][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-23 17:22:24,096][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-23 17:22:24,099][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-23 17:22:24,107][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-09-23 17:22:24,107][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-23 17:22:24,390][hydra.utils][INFO] - Starting training!
+[2024-09-23 17:22:47,519][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-09-23 17:22:51,950][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-09-23 17:22:51,983][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpsfbxg_qt
+[2024-09-23 17:22:51,983][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpsfbxg_qt/_remote_module_non_scriptable.py
+[2024-09-23 17:22:53,267][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-09-23 17:22:53,268][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-09-23 17:22:53,269][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-09-23 17:22:53,270][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-09-23 17:22:53,273][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-09-23 17:22:53,281][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-09-23 17:22:53,282][hydra.utils][INFO] - Instantiating the Trainer
+[2024-09-23 17:22:53,898][hydra.utils][INFO] - Starting training!
+[2024-11-11 14:38:12,648][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 14:38:13,245][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 14:38:13,289][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpi3bstgnf
+[2024-11-11 14:38:13,289][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpi3bstgnf/_remote_module_non_scriptable.py
+[2024-11-11 14:38:14,524][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 14:38:14,525][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 14:38:14,525][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 14:38:14,526][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 14:38:14,530][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 14:38:14,542][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 14:38:14,728][hydra.utils][INFO] - Starting training!
+[2024-11-11 16:25:09,317][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 16:25:13,304][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 16:25:13,343][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpczmprbr_
+[2024-11-11 16:25:13,343][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpczmprbr_/_remote_module_non_scriptable.py
+[2024-11-11 16:25:14,556][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 16:25:14,557][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 16:25:14,557][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 16:25:14,558][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 16:25:14,561][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 16:25:14,570][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 16:25:14,570][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 16:25:14,730][hydra.utils][INFO] - Starting training!
+[2024-11-11 16:28:26,902][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 16:28:27,448][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 16:28:27,481][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp_dijrfvg
+[2024-11-11 16:28:27,482][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp_dijrfvg/_remote_module_non_scriptable.py
+[2024-11-11 16:28:28,776][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 16:28:28,777][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 16:28:28,777][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 16:28:28,778][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 16:28:28,781][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 16:28:28,789][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 16:28:29,407][hydra.utils][INFO] - Starting training!
+[2024-11-11 16:29:18,751][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 16:29:23,062][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 16:29:23,095][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp0yqkbzt9
+[2024-11-11 16:29:23,095][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp0yqkbzt9/_remote_module_non_scriptable.py
+[2024-11-11 16:29:24,296][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 16:29:24,298][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 16:29:24,298][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 16:29:24,300][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 16:29:24,304][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 16:29:24,317][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 16:29:24,511][hydra.utils][INFO] - Starting training!
+[2024-11-11 16:34:13,686][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 16:34:17,989][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 16:34:18,032][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpz_xzl492
+[2024-11-11 16:34:18,032][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpz_xzl492/_remote_module_non_scriptable.py
+[2024-11-11 16:34:19,124][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 16:34:19,125][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 16:34:19,125][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 16:34:19,126][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 16:34:19,128][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 16:34:19,136][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 16:34:19,136][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 16:34:19,297][hydra.utils][INFO] - Starting training!
+[2024-11-11 16:35:28,909][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 16:36:11,472][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 16:36:55,412][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 16:44:26,916][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 16:44:31,289][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 16:44:31,322][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpqwl3gzu3
+[2024-11-11 16:44:31,322][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpqwl3gzu3/_remote_module_non_scriptable.py
+[2024-11-11 16:44:32,470][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 16:44:32,471][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 16:44:32,471][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 16:44:32,472][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 16:44:32,475][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 16:44:32,483][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 16:44:32,911][hydra.utils][INFO] - Starting training!
+[2024-11-11 16:46:17,002][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 16:46:17,690][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 16:46:17,723][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmprzu595nu
+[2024-11-11 16:46:17,723][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmprzu595nu/_remote_module_non_scriptable.py
+[2024-11-11 16:46:19,001][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 16:46:19,002][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 16:46:19,002][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 16:46:19,003][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 16:46:19,007][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 16:46:19,019][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 16:46:19,019][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 16:46:19,200][hydra.utils][INFO] - Starting training!
+[2024-11-11 16:46:43,866][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 16:46:48,579][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 16:46:48,611][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpmyd0zli0
+[2024-11-11 16:46:48,612][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpmyd0zli0/_remote_module_non_scriptable.py
+[2024-11-11 16:46:49,863][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 16:46:49,864][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 16:46:49,865][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 16:46:49,866][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 16:46:49,869][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 16:46:49,881][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 16:46:49,881][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 16:46:50,065][hydra.utils][INFO] - Starting training!
+[2024-11-11 16:53:30,227][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 16:53:30,875][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 16:53:30,907][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpc9yzi4e1
+[2024-11-11 16:53:30,907][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpc9yzi4e1/_remote_module_non_scriptable.py
+[2024-11-11 16:53:32,162][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 16:53:32,163][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 16:53:32,163][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 16:53:32,164][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 16:53:32,167][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 16:53:32,179][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 16:53:32,179][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 16:53:32,361][hydra.utils][INFO] - Starting training!
+[2024-11-11 16:54:07,587][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 16:54:12,615][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 16:54:12,647][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmptt7abb8z
+[2024-11-11 16:54:12,648][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmptt7abb8z/_remote_module_non_scriptable.py
+[2024-11-11 16:54:13,907][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 16:54:13,908][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 16:54:13,908][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 16:54:13,909][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 16:54:13,913][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 16:54:13,924][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 16:54:13,925][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 16:54:14,109][hydra.utils][INFO] - Starting training!
+[2024-11-11 16:58:14,979][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 16:58:19,419][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 16:58:19,457][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpn8wbxbfd
+[2024-11-11 16:58:19,457][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpn8wbxbfd/_remote_module_non_scriptable.py
+[2024-11-11 16:58:20,832][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 16:58:20,833][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 16:58:20,833][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 16:58:20,834][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 16:58:20,838][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 16:58:20,850][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 16:58:20,850][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 16:58:21,036][hydra.utils][INFO] - Starting training!
+[2024-11-11 17:01:57,271][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 17:02:01,320][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 17:02:01,353][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp57ewk1lr
+[2024-11-11 17:02:01,353][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp57ewk1lr/_remote_module_non_scriptable.py
+[2024-11-11 17:02:02,739][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 17:02:02,758][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 17:02:02,759][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 17:02:02,760][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 17:02:02,763][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 17:02:02,775][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 17:02:02,775][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 17:02:02,952][hydra.utils][INFO] - Starting training!
+[2024-11-11 17:04:33,775][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 17:04:39,065][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 17:04:39,098][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpc4dhyuzg
+[2024-11-11 17:04:39,099][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpc4dhyuzg/_remote_module_non_scriptable.py
+[2024-11-11 17:04:40,472][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 17:04:40,473][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 17:04:40,473][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 17:04:40,474][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 17:04:40,478][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 17:04:40,490][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 17:04:40,490][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 17:04:40,673][hydra.utils][INFO] - Starting training!
+[2024-11-11 17:06:32,324][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 17:06:36,427][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 17:06:36,460][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpt3c043av
+[2024-11-11 17:06:36,461][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpt3c043av/_remote_module_non_scriptable.py
+[2024-11-11 17:06:37,839][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 17:06:37,840][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 17:06:37,840][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 17:06:37,841][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 17:06:37,844][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 17:06:37,856][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 17:06:37,856][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 17:06:38,509][hydra.utils][INFO] - Starting training!
+[2024-11-11 17:12:39,570][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 17:12:44,045][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 17:12:44,080][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpkvkgrz_b
+[2024-11-11 17:12:44,080][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpkvkgrz_b/_remote_module_non_scriptable.py
+[2024-11-11 17:12:45,448][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 17:12:45,450][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 17:12:45,450][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 17:12:45,451][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 17:12:45,455][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 17:12:45,466][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 17:12:45,466][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 17:12:45,668][hydra.utils][INFO] - Starting training!
+[2024-11-11 19:46:27,214][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 19:46:31,382][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 19:46:31,417][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp32udxmcf
+[2024-11-11 19:46:31,417][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp32udxmcf/_remote_module_non_scriptable.py
+[2024-11-11 19:46:32,784][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 19:46:32,785][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 19:46:32,785][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 19:46:32,787][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 19:46:32,790][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 19:46:32,801][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 19:46:32,801][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 19:46:32,985][hydra.utils][INFO] - Starting training!
+[2024-11-11 19:49:48,303][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 19:49:52,651][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 19:49:52,686][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpa7mldj5i
+[2024-11-11 19:49:52,687][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpa7mldj5i/_remote_module_non_scriptable.py
+[2024-11-11 19:49:53,973][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 19:49:53,974][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 19:49:53,974][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 19:49:53,975][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 19:49:53,978][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 19:49:53,986][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 19:49:53,986][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 19:49:54,572][hydra.utils][INFO] - Starting training!
+[2024-11-11 19:52:32,284][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 19:52:36,557][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 19:52:36,592][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp_bgu0413
+[2024-11-11 19:52:36,592][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp_bgu0413/_remote_module_non_scriptable.py
+[2024-11-11 19:52:37,870][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 19:52:37,871][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 19:52:37,872][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 19:52:37,872][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 19:52:37,875][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 19:52:37,883][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 19:52:37,883][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 19:52:38,366][hydra.utils][INFO] - Starting training!
+[2024-11-11 19:56:24,977][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 19:56:29,182][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 19:56:29,217][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpkar5z7ky
+[2024-11-11 19:56:29,217][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpkar5z7ky/_remote_module_non_scriptable.py
+[2024-11-11 19:56:30,607][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 19:56:30,608][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 19:56:30,608][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 19:56:30,609][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 19:56:30,612][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 19:56:30,624][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 19:56:30,624][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 19:56:30,809][hydra.utils][INFO] - Starting training!
+[2024-11-11 19:59:25,472][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 19:59:29,753][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 19:59:29,787][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpx80ddeab
+[2024-11-11 19:59:29,787][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpx80ddeab/_remote_module_non_scriptable.py
+[2024-11-11 19:59:31,188][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 19:59:31,190][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 19:59:31,190][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 19:59:31,191][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 19:59:31,195][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 19:59:31,207][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 19:59:31,207][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 19:59:31,392][hydra.utils][INFO] - Starting training!
+[2024-11-11 20:00:11,562][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 20:00:15,795][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 20:00:15,828][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp02vixurp
+[2024-11-11 20:00:15,828][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp02vixurp/_remote_module_non_scriptable.py
+[2024-11-11 20:00:17,200][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 20:00:17,201][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 20:00:17,201][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 20:00:17,202][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 20:00:17,205][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 20:00:17,217][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 20:00:17,399][hydra.utils][INFO] - Starting training!
+[2024-11-11 20:19:28,150][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 20:19:32,356][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 20:19:32,402][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmppqsvkg3i
+[2024-11-11 20:19:32,403][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmppqsvkg3i/_remote_module_non_scriptable.py
+[2024-11-11 20:19:33,810][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 20:19:33,811][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 20:19:33,811][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 20:19:33,812][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 20:19:33,815][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 20:19:33,827][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 20:19:33,827][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 20:19:34,009][hydra.utils][INFO] - Starting training!
+[2024-11-11 20:22:18,782][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 20:22:23,138][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 20:22:23,172][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpl4df0ivl
+[2024-11-11 20:22:23,172][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpl4df0ivl/_remote_module_non_scriptable.py
+[2024-11-11 20:22:24,539][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 20:22:24,540][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 20:22:24,540][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 20:22:24,541][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 20:22:24,545][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 20:22:24,556][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 20:22:24,556][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 20:22:24,996][hydra.utils][INFO] - Starting training!
+[2024-11-11 20:23:13,978][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 20:23:18,264][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 20:23:18,297][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmplqcazdsc
+[2024-11-11 20:23:18,297][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmplqcazdsc/_remote_module_non_scriptable.py
+[2024-11-11 20:23:19,688][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 20:23:19,714][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 20:23:19,714][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 20:23:19,716][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 20:23:19,719][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 20:23:19,731][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 20:23:19,908][hydra.utils][INFO] - Starting training!
+[2024-11-11 20:27:48,657][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 20:27:52,987][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 20:27:53,023][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp04mdcmlr
+[2024-11-11 20:27:53,024][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp04mdcmlr/_remote_module_non_scriptable.py
+[2024-11-11 20:27:54,461][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 20:27:54,462][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 20:27:54,463][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 20:27:54,464][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 20:27:54,467][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 20:27:54,480][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-11 20:27:54,480][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 20:27:54,666][hydra.utils][INFO] - Starting training!
+[2024-11-11 20:29:02,122][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 20:29:07,183][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 20:29:07,239][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpsezcfka_
+[2024-11-11 20:29:07,239][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpsezcfka_/_remote_module_non_scriptable.py
+[2024-11-11 20:29:08,651][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 20:29:08,652][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 20:29:08,652][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 20:29:08,653][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 20:29:08,656][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 20:29:08,664][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 20:29:09,186][hydra.utils][INFO] - Starting training!
+[2024-11-11 20:32:09,325][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 20:32:13,693][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 20:32:13,727][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp646wl0mf
+[2024-11-11 20:32:13,727][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp646wl0mf/_remote_module_non_scriptable.py
+[2024-11-11 20:32:15,094][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 20:32:15,095][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 20:32:15,095][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 20:32:15,097][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 20:32:15,100][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 20:32:15,113][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 20:32:15,303][hydra.utils][INFO] - Starting training!
+[2024-11-11 20:33:21,084][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-11 20:33:25,360][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-11 20:33:25,394][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpxpjq7j6t
+[2024-11-11 20:33:25,394][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpxpjq7j6t/_remote_module_non_scriptable.py
+[2024-11-11 20:33:26,641][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-11 20:33:26,642][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-11 20:33:26,642][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-11 20:33:26,643][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-11 20:33:26,646][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-11 20:33:26,654][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-11 20:33:26,817][hydra.utils][INFO] - Starting training!
+[2024-11-12 17:54:48,671][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-12 17:54:54,183][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-12 17:54:54,218][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp2rez15fu
+[2024-11-12 17:54:54,218][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp2rez15fu/_remote_module_non_scriptable.py
+[2024-11-12 17:54:55,707][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-12 17:54:55,708][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-12 17:54:55,708][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-12 17:54:55,709][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-12 17:54:55,712][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-12 17:54:55,720][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-12 17:54:55,919][hydra.utils][INFO] - Starting training!
+[2024-11-12 17:56:42,043][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-12 17:56:46,527][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-12 17:56:46,560][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpn6vno8ol
+[2024-11-12 17:56:46,560][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpn6vno8ol/_remote_module_non_scriptable.py
+[2024-11-12 17:56:47,803][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-12 17:56:47,803][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-12 17:56:47,804][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-12 17:56:47,804][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-12 17:56:47,807][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-12 17:56:47,815][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-12 17:56:48,324][hydra.utils][INFO] - Starting training!
+[2024-11-12 20:45:09,041][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-12 20:45:14,589][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-12 20:45:14,625][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpaus5tg57
+[2024-11-12 20:45:14,625][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpaus5tg57/_remote_module_non_scriptable.py
+[2024-11-12 20:45:15,854][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-12 20:45:15,855][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-12 20:45:15,855][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-12 20:45:15,856][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-12 20:45:15,858][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-12 20:45:15,866][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-12 20:45:15,866][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-12 20:45:16,064][hydra.utils][INFO] - Starting training!
+[2024-11-12 20:46:57,377][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-12 20:47:02,964][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-12 20:47:03,000][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpfzu2mp78
+[2024-11-12 20:47:03,001][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpfzu2mp78/_remote_module_non_scriptable.py
+[2024-11-12 20:47:04,234][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-12 20:47:04,235][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-12 20:47:04,235][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-12 20:47:04,236][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-12 20:47:04,238][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-12 20:47:04,246][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-12 20:47:04,246][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-12 20:47:04,446][hydra.utils][INFO] - Starting training!
+[2024-11-12 20:48:19,666][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-12 20:48:25,526][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-12 20:48:25,561][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpxavwq8ot
+[2024-11-12 20:48:25,561][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpxavwq8ot/_remote_module_non_scriptable.py
+[2024-11-12 20:48:26,768][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-12 20:48:26,769][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-12 20:48:26,769][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-12 20:48:26,770][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-12 20:48:26,772][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-12 20:48:26,780][hydra.utils][INFO] - found checkpoint: /data/user2/wty/HOF/MOFDiff/mofdiff/data/mof_models/bb/bwdb_bb/last.ckpt
+[2024-11-12 20:48:26,781][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-12 20:48:27,053][hydra.utils][INFO] - Starting training!
+[2024-11-12 22:04:53,294][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-12 22:04:59,104][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-12 22:04:59,137][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpxu6k_x8a
+[2024-11-12 22:04:59,137][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpxu6k_x8a/_remote_module_non_scriptable.py
+[2024-11-12 22:05:00,421][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-12 22:05:00,422][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-12 22:05:00,422][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-12 22:05:00,423][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-12 22:05:00,426][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-12 22:05:00,434][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-12 22:05:00,635][hydra.utils][INFO] - Starting training!
+[2024-11-19 15:44:13,358][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-19 15:44:19,378][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-19 15:44:19,498][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpul0leq6d
+[2024-11-19 15:44:19,498][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpul0leq6d/_remote_module_non_scriptable.py
+[2024-11-19 15:44:20,900][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-19 15:44:20,900][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-19 15:44:20,901][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-19 15:44:20,902][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-19 15:44:20,904][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-19 15:44:20,912][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-19 15:44:21,023][hydra.utils][INFO] - Starting training!
+[2024-11-19 15:45:11,280][hydra.utils][INFO] - Instantiating <mofdiff.data.datamodule.DataModule>
+[2024-11-19 15:45:16,280][hydra.utils][INFO] - Instantiating <mofdiff.model.bb_encoder.BBEncoder>
+[2024-11-19 15:45:16,323][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpctq_dmkq
+[2024-11-19 15:45:16,324][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpctq_dmkq/_remote_module_non_scriptable.py
+[2024-11-19 15:45:17,758][hydra.utils][INFO] - Passing scaler from datamodule to model <None>
+[2024-11-19 15:45:17,759][hydra.utils][INFO] - Adding callback <LearningRateMonitor>
+[2024-11-19 15:45:17,760][hydra.utils][INFO] - Adding callback <EarlyStopping>
+[2024-11-19 15:45:17,760][hydra.utils][INFO] - Adding callback <ModelCheckpoint>
+[2024-11-19 15:45:17,763][hydra.utils][INFO] - TensorBoard Logger logs into <{cfg.logging.tensorboard.save_dir}>!
+[2024-11-19 15:45:17,771][hydra.utils][INFO] - Instantiating the Trainer
+[2024-11-19 15:45:17,873][hydra.utils][INFO] - Starting training!

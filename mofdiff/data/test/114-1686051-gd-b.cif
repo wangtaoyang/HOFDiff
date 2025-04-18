@@ -1,0 +1,73 @@
+data_I
+_chemical_name_common  '/data/user2/wty/HOF/MOFDiff/mofdiff/data/test/114-1686051-gd-b'
+_cell_length_a 10.61390
+_cell_length_b 10.61390
+_cell_length_c 10.61390
+_cell_angle_alpha 90.00000
+_cell_angle_beta  90.00000
+_cell_angle_gamma 90.00000
+_space_group_name_H-M_alt      'P 1'
+
+
+loop_
+_space_group_symop_operation_xyz
+  'x, y, z' 
+
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_type_symbol
+N0      0.1988   0.0462   0.1988     N
+H1      0.2649    0.013   0.1656     H
+H2      0.1658   0.0132   0.2651     H
+C3      0.1481   0.1481   0.1481     C
+O4     0.07528  0.92472   0.4118     O
+C5      0.1644   0.8356   0.4645     C
+H6      0.2076    0.793   0.3974     H
+H7      0.1201   0.7751   0.5151     H
+H8      0.2244   0.8798   0.5158     H
+B9         0.0      0.0      0.5     B
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_ccdc_geom_bond_type
+H2    O4     2.05656   1_545     S
+O4    H2     2.05656   1_565     S
+N0    H1     0.86056       .     S
+H1    N0     0.86056       .     S
+N0    H2     0.86056       .     S
+H2    N0     0.86056       .     S
+N0    C3     1.32247       .     S
+C3    N0     1.32247       .     S
+O4    C5     1.44995       .     S
+C5    O4     1.44995       .     S
+O4    B9     1.46738   1_565     S
+B9    O4     1.46738   1_545     S
+C5    H6     0.96016       .     S
+H6    C5     0.96016       .     S
+C5    H7     0.96014       .     S
+H7    C5     0.96014       .     S
+C5    H8     0.96027       .     S
+H8    C5     0.96027       .     S
+O4    H2     2.05656   1_565     S
+H2    O4     2.05656   1_545     S
+H1    N0     0.86056       .     S
+N0    H1     0.86056       .     S
+H2    N0     0.86056       .     S
+N0    H2     0.86056       .     S
+C3    N0     1.32247       .     S
+N0    C3     1.32247       .     S
+C5    O4     1.44995       .     S
+O4    C5     1.44995       .     S
+B9    O4     1.46738   1_545     S
+O4    B9     1.46738   1_565     S
+H6    C5     0.96016       .     S
+C5    H6     0.96016       .     S
+H7    C5     0.96014       .     S
+C5    H7     0.96014       .     S
+H8    C5     0.96027       .     S
+C5    H8     0.96027       .     S

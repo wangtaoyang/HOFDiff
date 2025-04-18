@@ -1,0 +1,54 @@
+data_I
+_chemical_name_common  '/data/user2/wty/HOF/MOFDiff/mofdiff/data/test/18_1445429_1-h2o'
+_cell_length_a 12.65700
+_cell_length_b 12.65700
+_cell_length_c  9.29600
+_cell_angle_alpha 90.00000
+_cell_angle_beta  90.00000
+_cell_angle_gamma 120.00000
+_space_group_name_H-M_alt      'P 1'
+
+
+loop_
+_space_group_symop_operation_xyz
+  'x, y, z' 
+
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_type_symbol
+N0      0.7955  0.02736   0.8242     N
+H1       0.711     0.98    0.821     H
+C2     0.85107  0.14893   0.8306     C
+H3      0.8079   0.1921   0.8389     H
+C4     0.88884  0.00067   0.8139     C
+O5      0.6667   0.3333   0.8333     O
+H6      0.6216   0.3784   0.8443     H
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_ccdc_geom_bond_type
+N0    H1     0.92896   1_545     S
+H1    N0     0.92896   1_565     S
+N0    C2     1.33552       .     S
+C2    N0     1.33552       .     S
+N0    C4     1.38496       .     S
+C4    N0     1.38496       .     S
+C2    H3     0.94954       .     S
+H3    C2     0.94954       .     S
+O5    H6     0.99398       .     S
+H6    O5     0.99398       .     S
+H1    N0     0.92896   1_565     S
+N0    H1     0.92896   1_545     S
+C2    N0     1.33552       .     S
+N0    C2     1.33552       .     S
+C4    N0     1.38496       .     S
+N0    C4     1.38496       .     S
+H3    C2     0.94954       .     S
+C2    H3     0.94954       .     S
+H6    O5     0.99398       .     S
+O5    H6     0.99398       .     S

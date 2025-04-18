@@ -1,0 +1,39 @@
+data_I
+_chemical_name_common  '/data/user2/wty/HOF/MOFDiff/mofdiff/data/test/100_1974317_2'
+_cell_length_a 27.83800
+_cell_length_b 27.83800
+_cell_length_c 28.81320
+_cell_angle_alpha 90.00000
+_cell_angle_beta  90.00000
+_cell_angle_gamma 120.00000
+_space_group_name_H-M_alt      'P 1'
+
+
+loop_
+_space_group_symop_operation_xyz
+  'x, y, z' 
+
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_type_symbol
+O0       0.347    0.468   0.1697     O
+O1      0.3356   0.4981   0.1931     O
+Br2    0.34891  0.41742  0.88461    Br
+Br3    0.31476  0.39054  0.90154    Br
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_ccdc_geom_bond_type
+O0    O1     1.23423       .     S
+O1    O0     1.23423       .     S
+Br2   Br3    0.99513       .     S
+Br3   Br2    0.99513       .     S
+O1    O0     1.23423       .     S
+O0    O1     1.23423       .     S
+Br3   Br2    0.99513       .     S
+Br2   Br3    0.99513       .     S

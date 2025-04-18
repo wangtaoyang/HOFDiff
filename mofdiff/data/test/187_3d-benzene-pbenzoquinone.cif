@@ -1,0 +1,78 @@
+data_I
+_chemical_name_common  '/data/user2/wty/HOF/MOFDiff/mofdiff/data/test/187_3d-benzene-pbenzoquinone'
+_cell_length_a 13.37140
+_cell_length_b 13.37140
+_cell_length_c  7.52710
+_cell_angle_alpha 90.00000
+_cell_angle_beta  90.00000
+_cell_angle_gamma 90.00000
+_space_group_name_H-M_alt      'P 1'
+
+
+loop_
+_space_group_symop_operation_xyz
+  'x, y, z' 
+
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_type_symbol
+O0     0.31366  0.68634   0.8236     O
+H1     0.27473  0.65176  0.88113     H
+H2     0.28514  0.72658  0.75886     H
+Si3     0.3845   0.6155  0.70581    Si
+O4         0.5   0.6384   0.7489     O
+O5      0.3625   0.6375      0.5     O
+C6      0.4023      0.0      0.5     C
+H7      0.3327      0.0      0.5     H
+C8      0.4466   0.9122      0.5     C
+H9     0.41012  0.85301      0.5     H
+O10      0.407    0.823      0.5     O
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_ccdc_geom_bond_type
+O0    H1     0.81993       .     S
+H1    O0     0.81993       .     S
+O0    H2     0.82001       .     S
+H2    O0     0.82001       .     S
+O0    Si3    1.60642       .     S
+Si3   O0     1.60642       .     S
+Si3   O4     1.60752       .     S
+O4    Si3    1.60752       .     S
+Si3   O5     1.60404       .     S
+O5    Si3    1.60404       .     S
+C6    H7     0.93065       .     S
+H7    C6     0.93065       .     S
+C6    C8     1.31498   1_545     S
+C8    C6     1.31498   1_565     S
+C8    H9     0.92970       .     S
+H9    C8     0.92970       .     S
+C8    O10    1.30498       .     S
+O10   C8     1.30498       .     S
+H9    O10    0.40344       .     S
+O10   H9     0.40344       .     S
+H1    O0     0.81993       .     S
+O0    H1     0.81993       .     S
+H2    O0     0.82001       .     S
+O0    H2     0.82001       .     S
+Si3   O0     1.60642       .     S
+O0    Si3    1.60642       .     S
+O4    Si3    1.60752       .     S
+Si3   O4     1.60752       .     S
+O5    Si3    1.60404       .     S
+Si3   O5     1.60404       .     S
+H7    C6     0.93065       .     S
+C6    H7     0.93065       .     S
+C8    C6     1.31498   1_565     S
+C6    C8     1.31498   1_545     S
+H9    C8     0.92970       .     S
+C8    H9     0.92970       .     S
+O10   C8     1.30498       .     S
+C8    O10    1.30498       .     S
+O10   H9     0.40344       .     S
+H9    O10    0.40344       .     S

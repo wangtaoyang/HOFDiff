@@ -1,0 +1,124 @@
+data:
+  name: bwdb_bb
+  root_path: ${oc.env:DATASET_DIR}
+  use_type_mapper: true
+  max_bbs: 25
+  max_atoms: 200
+  max_cps: 200
+  train_max_steps: 1500000
+  early_stopping_patience: 100
+  patience: 10
+  data_cache_path: ${oc.env:DATASET_DIR}
+  load_cached: true
+  save_cached: false
+  datamodule:
+    _target_: mofdiff.data.datamodule.DataModule
+    datasets:
+      train:
+        _target_: mofdiff.data.dataset.BBDataset
+        name: ${data.name}_train
+        path: ${data.root_path}
+        max_bbs: ${data.max_bbs}
+        max_atoms: ${data.max_atoms}
+        max_cps: ${data.max_cps}
+        split_file: ${oc.env:PROJECT_ROOT}/splits/train_split.txt
+      val:
+        _target_: mofdiff.data.dataset.BBDataset
+        name: ${data.name}_train
+        path: ${data.root_path}
+        max_bbs: ${data.max_bbs}
+        max_atoms: ${data.max_atoms}
+        max_cps: ${data.max_cps}
+        split_file: ${oc.env:PROJECT_ROOT}/splits/val_split.txt
+    num_workers:
+      train: 8
+      val: 8
+      test: 8
+    batch_size:
+      train: 1024
+      val: 1024
+      test: 1024
+  data_transforms: None
+logging:
+  val_check_interval: 3
+  progress_bar_refresh_rate: 10
+  tensorboard:
+    save_dir: ${oc.env:LOG_DIR}/tensorboard
+  lr_monitor:
+    logging_interval: step
+    log_momentum: false
+model:
+  encoder:
+    readout:
+      _target_: mofdiff.model.readout.CombinedGraphReadout
+      node_dim: ${model.encoder.num_targets}
+      out_dim: ${model.encoder.num_targets}
+      num_heads: 8
+      head_dim: 32
+    _target_: mofdiff.model.gnn.GemNetOCEncoder
+    otf_graph: false
+    radius: 12.0
+    use_pbc: false
+    hidden_dim: ${model.hidden_dim}
+    num_targets: ${model.latent_dim}
+    scale_file: ${oc.env:PROJECT_ROOT}/mofdiff/model/gemnet_oc/gemnet-oc.pt
+  _target_: mofdiff.model.bb_encoder.BBEncoder
+  hidden_dim: 256
+  latent_dim: 32
+  project_dim: 128
+  fc_num_layers: 2
+  max_bbs: ${data.max_bbs}
+  max_atoms: ${data.max_atoms}
+  max_cps: ${data.max_cps}
+  id_loss: contrastive
+  temperature: 0.1
+  cost_id: 5.0
+  cost_natom: 1.0
+  cost_ncp: 1.0
+  cost_d: 1.0
+  cost_z: 0.0
+optim:
+  optimizer:
+    _target_: torch.optim.Adam
+    lr: 0.0003
+    betas:
+    - 0.9
+    - 0.999
+    eps: 1.0e-08
+    weight_decay: 0
+  use_lr_scheduler: true
+  lr_scheduler:
+    _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+    factor: 0.6
+    patience: ${data.patience}
+train:
+  deterministic: false
+  random_seed: 42
+  pl_trainer:
+    fast_dev_run: false
+    gpus: 6
+    precision: 32
+    max_steps: ${data.train_max_steps}
+    accumulate_grad_batches: 1
+    num_sanity_val_steps: 1
+    gradient_clip_val: 0.5
+    gradient_clip_algorithm: value
+    profiler: simple
+    limit_val_batches: 50.0
+  monitor_metric: val_loss
+  monitor_metric_mode: min
+  early_stopping:
+    patience: ${data.early_stopping_patience}
+    verbose: false
+  model_checkpoints:
+    save_top_k: 2
+    every_n_epochs: 2
+    save_last: true
+    verbose: false
+expname: bwdb_bb
+workdir: ${oc.env:HYDRA_JOBS}/bb_models/${expname}
+config_for: bb
+core:
+  version: 0.0.1
+  tags:
+  - ${now:%Y-%m-%d}
