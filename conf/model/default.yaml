@@ -1,4 +1,4 @@
-_target_: mofdiff.model.cg_diffusion.MOFDiff
+_target_: hofdiff.model.cg_diffusion.MOFDiff
 hidden_dim: 512
 latent_dim: 512
 fc_num_layers: 1

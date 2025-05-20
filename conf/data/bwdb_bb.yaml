@@ -16,11 +16,11 @@ load_cached: true
 save_cached: false
 
 datamodule:
-  _target_: mofdiff.data.datamodule.DataModule
+  _target_: hofdiff.data.datamodule.DataModule
 
   datasets:
     train:
-      _target_: mofdiff.data.dataset.BBDataset
+      _target_: hofdiff.data.dataset.BBDataset
       name: ${data.name}_train
       path: ${data.root_path}
       max_bbs: ${data.max_bbs}
@@ -29,7 +29,7 @@ datamodule:
       split_file: ${oc.env:PROJECT_ROOT}/splits/train_split.txt
 
     val:
-      _target_: mofdiff.data.dataset.BBDataset
+      _target_: hofdiff.data.dataset.BBDataset
       name: ${data.name}_train
       path: ${data.root_path}
       max_bbs: ${data.max_bbs}

@@ -1,0 +1,173 @@
+data:
+  name: bwdb
+  root_path: /mnt/user2/wty/HOFDiff/hofdiff/data/lmdb_data
+  prop_list:
+  - working_capacity_vacuum_swing [mmol/g]
+  - working_capacity_temperature_swing [mmol/g]
+  logmod: true
+  num_targets: 2
+  use_type_mapper: false
+  bb_encoder_path: /mnt/user2/wty/HOFDiff/hofdiff/data/hof_models/bb/bwdb_bb
+  lattice_scale_method: scale_length
+  max_bbs: 25
+  max_atoms: 200
+  max_cps: 200
+  otf_graph: false
+  train_max_steps: 2000000
+  early_stopping_patience: 1000
+  teacher_forcing_max_epoch: 300
+  patience: 50
+  data_cache_path: /mnt/user2/wty/HOFDiff/hofdiff/data/lmdb_data
+  load_cached: true
+  save_cached: false
+  datamodule:
+    _target_: hofdiff.data.datamodule.DataModule
+    bb_encoder_path: /mnt/user2/wty/HOFDiff/hofdiff/data/hof_models/bb/bwdb_bb
+    datasets:
+      train:
+        _target_: hofdiff.data.dataset.MOFDataset
+        name: bwdb_train
+        path: /mnt/user2/wty/HOFDiff/hofdiff/data/lmdb_data
+        prop_list:
+        - working_capacity_vacuum_swing [mmol/g]
+        - working_capacity_temperature_swing [mmol/g]
+        transforms: None
+        max_bbs: 25
+        max_atoms: 200
+        max_cps: 200
+        logmod: true
+        split_file: /mnt/user2/wty/HOFDiff//splits/train_split.txt
+      val:
+        _target_: hofdiff.data.dataset.MOFDataset
+        name: bwdb_val
+        path: /mnt/user2/wty/HOFDiff/hofdiff/data/lmdb_data
+        prop_list:
+        - working_capacity_vacuum_swing [mmol/g]
+        - working_capacity_temperature_swing [mmol/g]
+        transforms: None
+        max_bbs: 25
+        max_atoms: 200
+        max_cps: 200
+        logmod: true
+        split_file: /mnt/user2/wty/HOFDiff//splits/val_split.txt
+    num_workers:
+      train: 0
+      val: 0
+      test: 0
+    batch_size:
+      train: 1024
+      val: 1024
+      test: 1024
+  data_transforms: None
+logging:
+  val_check_interval: 3
+  progress_bar_refresh_rate: 10
+  tensorboard:
+    save_dir: /mnt/user2/wty/HOFDiff/hofdiff/data/hof_models/tensorboard
+  lr_monitor:
+    logging_interval: step
+    log_momentum: false
+model:
+  encoder:
+    readout:
+      _target_: hofdiff.model.readout.CombinedGraphReadout
+      node_dim: 512
+      out_dim: 512
+      num_heads: 8
+      head_dim: 32
+    _target_: hofdiff.model.gnn.GemNetOCEncoder
+    otf_graph: false
+    num_blocks: 3
+    radius: 4.0
+    max_neighbors: 24
+    hidden_dim: 512
+    num_targets: 512
+    scale_file: /mnt/user2/wty/HOFDiff//hofdiff/model/gemnet_oc/gemnet-oc.pt
+  decoder:
+    _target_: hofdiff.model.gnn.GemNetOCDecoder
+    num_blocks: 3
+    hidden_dim: 512
+    latent_dim: 512
+    max_neighbors: 24
+    radius: 4.0
+    scale_file: /mnt/user2/wty/HOFDiff//hofdiff/model/gemnet_oc/gemnet-oc.pt
+  _target_: hofdiff.model.cg_diffusion.MOFDiff
+  hidden_dim: 512
+  latent_dim: 512
+  fc_num_layers: 1
+  max_bbs: 25
+  max_atoms: 200
+  max_cps: 200
+  cost_natom: 1.0
+  cost_coord: 1.0
+  cost_type: 1.0
+  cost_lattice: 1.0
+  cost_property: 1.0
+  beta: 0.01
+  teacher_forcing_lattice: true
+  teacher_forcing_max_epoch: 300
+  otf_graph: false
+  max_neighbors: 24
+  radius: 4.0
+  predict_property: true
+  property_dim: 2
+  diffusion_step: 2000
+  norm_x: 10.0
+  norm_h: 10.0
+  diffusion:
+    pos:
+      sigma_min: 0.001
+      sigma_max: 10.0
+    type:
+      power: 2.0
+      clipmax: 0.999
+  t_emb_dim: 256
+  fourier_scale: 16
+optim:
+  optimizer:
+    _target_: torch.optim.Adam
+    lr: 0.0003
+    betas:
+    - 0.9
+    - 0.999
+    eps: 1.0e-08
+    weight_decay: 0
+  use_lr_scheduler: true
+  lr_scheduler:
+    _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+    factor: 0.6
+    patience: 50
+train:
+  deterministic: false
+  random_seed: 42
+  pl_trainer:
+    fast_dev_run: false
+    gpus: 6
+    precision: 32
+    max_steps: 2000000
+    accumulate_grad_batches: 1
+    num_sanity_val_steps: 1
+    gradient_clip_val: 0.5
+    gradient_clip_algorithm: value
+    profiler: simple
+    limit_val_batches: 50.0
+  monitor_metric: val_loss
+  monitor_metric_mode: min
+  early_stopping:
+    patience: 1000
+    verbose: false
+  model_checkpoints:
+    save_top_k: 2
+    every_n_epochs: 2
+    save_last: true
+    verbose: false
+expname: bwdb_hoff
+workdir: /mnt/user2/wty/HOFDiff/hofdiff/data/hof_models/hof_models/bwdb_hoff
+config_for: mof
+core:
+  version: 0.0.1
+  tags:
+  - '2025-05-20'
+stats/params_total: 92745391
+stats/params_trainable: 92745228
+stats/params_not_trainable: 163

@@ -1,10 +1,10 @@
-_target_: mofdiff.model.gnn.GemNetOCEncoder
+_target_: hofdiff.model.gnn.GemNetOCEncoder
 otf_graph: False
 radius: 12.0
 use_pbc: False
 hidden_dim: ${model.hidden_dim}
 num_targets: ${model.latent_dim}
-scale_file: ${oc.env:PROJECT_ROOT}/mofdiff/model/gemnet_oc/gemnet-oc.pt
+scale_file: ${oc.env:PROJECT_ROOT}/hofdiff/model/gemnet_oc/gemnet-oc.pt
 
 defaults:
   - readout: combined

@@ -1,4 +1,4 @@
-_target_: mofdiff.model.readout.CombinedGraphReadout
+_target_: hofdiff.model.readout.CombinedGraphReadout
 node_dim: ${model.encoder.num_targets}
 out_dim: ${model.encoder.num_targets}
 num_heads: 8

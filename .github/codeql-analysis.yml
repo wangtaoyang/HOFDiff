@@ -2,6 +2,6 @@ language: python
 queries:
   - python
 paths:
-  - mofdiff/
+  - hofdiff/
 pull_request:
   base: main

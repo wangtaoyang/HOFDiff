@@ -14,12 +14,20 @@ Install dependencies via `mamba`:
 mamba env create -f env.yml
 ```
 
-
-
-Then install `mofdiff` as a package:
+To ensure compatibility with your PyTorch and CUDA versions, download the corresponding `.whl` files from [https://data.pyg.org/whl](https://data.pyg.org/whl) and install them via `pip`:
 
 ```bash
-pip install -e 
+pip install torch_cluster-1.6.3+pt23cu121-cp39-cp39-linux_x86_64.whl
+pip install torch_scatter-2.1.2+pt23cu121-cp39-cp39-linux_x86_64.whl
+pip install torch_sparse-0.6.18+pt23cu121-cp39-cp39-linux_x86_64.whl
+```
+
+> Match `pt23`, `cu121`, and `cp39` to your PyTorch, CUDA, and Python versions.
+
+Then install `hofdiff` as a package:
+
+```bash
+pip install -e .
 ```
 
  
@@ -28,7 +36,7 @@ Configure the `.env` file to set correct paths to various directories, dependent
 
 For model training, please set the learning-related paths.
 
-- PROJECT_ROOT: the parent MOFDiff directory
+- PROJECT_ROOT: the parent HOFDiff directory
 - DATASET_DIR: the directory containing the .lmdb file produced by processing the data
 - LOG_DIR: the directory to which logs will by written
 - HYDRA_JOBS: the directory to which Hydra output will be written
@@ -40,22 +48,53 @@ In this step, we will split and reorganize the first real HOF dataset we have co
 
 ```bash
 # 1. Split the HOF CIF files into molecule_{i}.cif and output them to the target folder. The cif_folder contains several HOF CIF files. After running the script, the output_folder will contain subfolders named after each HOF, with each folder containing several split molecule_{i}.cif files.
-python mofdiff/preprocessing/split_hof.py /path/to/cif_folder /path/to/output_folder
+python hofdiff/preprocessing/split_hof.py --cif_file_path ./hof_database_cifs_raw --output_directory ./hofdiff/data/hof_data
 
-# 2. Merge the molecule_{i}.cif files from the output_folder into several bb.cif files based on periodic boundary conditions.
-python mofdiff/preprocessing/combine_bb.py --root_path /path/to/your/root/output_folder
+# 2. Merge the `molecule_{i}.cif` files from the `output_folder` into several `bb.cif` files based on periodic boundary conditions.  Note: This step may take a significant amount of time.
+python hofdiff/preprocessing/combine_bb.py --bbs_path ./hofdiff/data/hof_data
 
 # 3. Reassemble the valid molecule_{i}.cif files into complete HOF CIF files.
-python mofdiff/preprocessing/combine_cifid.py --root_path /path/to/your/root/output_folder
+python hofdiff/preprocessing/combine_cifid.py --root_path ./hofdiff/data/hof_data
 
 # 4. Generate the data for HOFDiff training.
-python mofdiff/preprocessing/preprocess_hof.py --df_path /path/to/hof.csv --save_path /path/to/hof_save_path --device cpu --num_workers 4
+python hofdiff/preprocessing/preprocess_hof.py --df_path ./hofdiff/data/hof.csv --save_path ./hofdiff/data/hof_save_path --device cpu --num_workers 4
 
 # 5. Store the data in pkl format.
-python mofdiff/preprocessing/save_to_lmdb.py --graph_path ${raw_path}/graphs --save_path ${raw_path}/lmdbs
+python hofdiff/preprocessing/save_to_lmdb.py --pkl_path ./hofdiff/data/hof_save_path  --lmdb_path ./hofdiff/data/lmdb_data
 ```
 
+If you plan to train or generate structures using our real HOF dataset, we recommend downloading our preprocessed data from **[https://figshare.com/articles/dataset/HOFDiff/28856456](https://figshare.com/articles/dataset/HOFDiff/28856456)** to save time.
 
+### Option 1: Skip to Step 4
+
+Download and extract the `hof_save_path` folder directly to complete **Step 4**.
+
+### Option 2: Use Preprocessed LMDB Files
+
+Download the `lmdb_data` folder, which contains:
+
+- Precomputed building block embeddings
+- A preprocessed HOF database
+
+---
+
+### Skip Training (Use Pretrained Models)
+
+If you want to skip the training steps, you can directly download our pretrained models from the same link:
+
+- **Building Block Encoder**  
+  Download `hofdiff_bb_encoder.ckpt` and place it at:  
+  `${oc.env:HYDRA_JOBS}/bb/${expname}/`  
+  - `oc.env:HYDRA_JOBS` is defined in your `.env` file  
+  - `expname` is defined in `configs/bb.yaml`
+
+- **Diffusion Model**  
+  Download `hofdiff_diffusion_model.ckpt` and place it at:  
+  `${oc.env:HYDRA_JOBS}/hof_models/${expname}/`  
+  - `oc.env:HYDRA_JOBS` is defined in your `.env` file  
+  - `expname` is defined in `configs/hofdiff.yaml`
+
+Once these models are in place, you can jump directly to the **"Generating CG HOF Structures"** section.
 
 ## Training
 
@@ -64,7 +103,7 @@ python mofdiff/preprocessing/save_to_lmdb.py --graph_path ${raw_path}/graphs --s
 Before training the diffusion model, we need to train the building block encoder. The building block encoder is a graph neural network that encodes the building blocks of HOFs. The building block encoder is trained with the following command:
 
 ```bash
-python mofdiff/scripts/train.py --config-name=bb
+python hofdiff/scripts/train.py --config-name=bb
 ```
 
 
@@ -72,7 +111,7 @@ python mofdiff/scripts/train.py --config-name=bb
 The default output directory is `${oc.env:HYDRA_JOBS}/bb/${expname}/`. `oc.env:HYDRA_JOBS` is configured in `.env`. `expname` is configured in `configs/bb.yaml`. We use hydra for config management. All configs are stored in `configs/` You can override the default output directory with command line arguments. For example:
 
 ```
-python mofdiff/scripts/train.py --config-name=bb expname=bwdb_bb_dim_64 model.latent_dim=64
+python hofdiff/scripts/train.py --config-name=bb 
 ```
 
 ### training coarse-grained diffusion model for HOFs
@@ -80,22 +119,24 @@ python mofdiff/scripts/train.py --config-name=bb expname=bwdb_bb_dim_64 model.la
 The output directory where the building block encoder is saved: `bb_encoder_path` is needed for training the diffusion model. By default, this path is `${oc.env:HYDRA_JOBS}/bb/${expname}/`, as defined [above](https://github.com/wangtaoyang/HOFDiff#training-the-building-block-encoder). Train/validation splits are defined in [splits](https://github.com/wangtaoyang/HOFDiff/blob/main/splits), with examples provided for BW-DB. With the building block encoder trained to convergence, train the CG diffusion model with the following command:
 
 ```bash
-python mofdiff/scripts/train.py data.bb_encoder_path=${bb_encoder_path}
+python hofdiff/scripts/train.py data.bb_encoder_path=${bb_encoder_path}
 ```
 
 
 
 ## Generating CG HOF structures
 
-To use the pretrained models, please extract `pretrained.tar.gz` and `bb_emb_space.tar.gz` into `${oc.env:PROJECT_ROOT}/pretrained`.
+With a trained CG diffusion model `${diffusion_model_path}`, you can generate random coarse-grained (CG) HOF structures using the following command:
 
-With a trained CG diffusion model `${diffusion_model_path}`, generate random CG HOF structures with the following command, where `${bb_cache_path}` is the path to the trained building encoder `bb_emb_space.pt`, either sourced from the pretrained models or generated as described [above](https://github.com/wangtaoyang/HOFDiff#training-the-building-block-encoder).
+- `${bb_cache_path}` should point to the trained building block encoder output `bb_emb_space.pt`, which will be:
+  - automatically generated in the `DATASET_DIR` folder after training the diffusion model, or  
+  - directly available by downloading and extracting the `lmdb_data` folder from our dataset on **[Figshare](https://figshare.com/articles/dataset/HOFDiff/28856456)**.
 
 ```bash
-python mofdiff/scripts/sample.py --model_path ${diffusion_model_path} --bb_cache_path ${bb_cache_path}
+python hofdiff/scripts/sample.py --model_path ${diffusion_model_path} --bb_cache_path ${bb_cache_path}
 ```
 
-Available arguments for `sample.py` and `optimize.py` can be found in the respective files. The generated CG HOF structures will be saved in `${sample_path}=${diffusion_model_path}/${sample_tag}` as `samples.pt`.
+Available arguments for `sample.py`  can be found in the respective files. The generated CG HOF structures will be saved in `${sample_path}=${diffusion_model_path}/${sample_tag}` as `samples.pt`.
 
 The CG structures generated with the diffusion model are not guaranteed to be realizable. We need to assemble the CG structures to recover the all-atom HOF structures. The following sections describe how to assemble the CG HOF structures, and all steps further do not require a GPU.
 
@@ -104,7 +145,49 @@ The CG structures generated with the diffusion model are not guaranteed to be re
 Assemble all-atom HOF structures from the CG HOF structures with the following command:
 
 ```bash
-python mofdiff/scripts/assemble.py --input ${sample_path}/samples.pt
+python hofdiff/scripts/assemble.py --input ${sample_path}/samples.pt
 ```
 
 This command will assemble the CG HOF structures in `${sample_path}` and save the assembled HOFs in `${sample_path}/assembled.pt`. The cif files of the assembled HOFs will be saved in `${sample_path}/cif`.
+
+
+
+## Generating Large Batches of Simulated HOFs
+
+In this experiment, we use the following script to generate a large number of virtual HOFs on 8 RTX 4090 GPUs (n_sample = 4096, batch_size = 4096):
+
+```bash
+#!/bin/bash
+cd . || exit
+
+diffusion_model_path="./hofdiff/data/hof_models/hof_models/bwdb_hoff"
+bb_cache_path="./hofdiff/data/lmdb_data/bb_emb_space.pt"
+
+# Loop through GPU indexes 0 to 7
+for i in {0..7}
+do
+    CUDA_VISIBLE_DEVICES=$i python hofdiff/scripts/sample.py --model_path ${diffusion_model_path} --bb_cache_path ${bb_cache_path} --seed $i &
+done
+
+wait
+```
+
+This will generate approximately 300,000 virtual HOFs for screening. You can move all of them to a single folder, e.g., `all_hof`.
+
+## Screening with Platon and MOFchecker
+
+Platon can filter CIF files containing hydrogen bond information:
+
+```bash
+python hofdiff/scripts/filter_hbond_cifs.py --input_dir ./all_hof --output_dir ./hbond_cifs
+```
+
+MOFchecker performs quick sanity checks on crystal structures of metal-organic frameworks (MOFs). We can use some HOF-appropriate rules from MOFChecker to select more reasonable HOF structures.
+
+First, download mofchecker following the instructions at: https://github.com/lamalab-org/mofchecker
+
+Then use this script to further filter HOFs containing hydrogen bonds:
+
+```bash
+python hofdiff/scripts/hof_checker.py --input_dir ./hbond_cifs --output_dir ./hofdiff-1300 --n_workers 4
+```

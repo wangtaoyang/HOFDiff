@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="mofdiff",
+    name="hofdiff",
     version="1.0.0",
-    packages=find_packages(include=["mofdiff", "mofdiff.*"]),
+    packages=find_packages(include=["hofdiff", "hofdiff.*"]),
 )

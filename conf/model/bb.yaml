@@ -1,4 +1,4 @@
-_target_: mofdiff.model.bb_encoder.BBEncoder
+_target_: hofdiff.model.bb_encoder.BBEncoder
 hidden_dim: 256
 latent_dim: 32
 project_dim: 128

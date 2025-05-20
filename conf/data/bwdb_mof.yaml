@@ -25,12 +25,12 @@ load_cached: true
 save_cached: false
 
 datamodule:
-  _target_: mofdiff.data.datamodule.DataModule
+  _target_: hofdiff.data.datamodule.DataModule
   bb_encoder_path: ${data.bb_encoder_path}
 
   datasets:
     train:
-      _target_: mofdiff.data.dataset.MOFDataset
+      _target_: hofdiff.data.dataset.MOFDataset
       name: ${data.name}_train
       path: ${data.root_path}
       prop_list: ${data.prop_list}
@@ -42,7 +42,7 @@ datamodule:
       split_file: ${oc.env:PROJECT_ROOT}/splits/train_split.txt
 
     val:
-      _target_: mofdiff.data.dataset.MOFDataset
+      _target_: hofdiff.data.dataset.MOFDataset
       name: ${data.name}_val
       path: ${data.root_path}
       prop_list: ${data.prop_list}
